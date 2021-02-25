@@ -47,6 +47,8 @@ class AudioBloc extends Bloc<AudioEvent, AudioState> {
 
   SongModel _currentSong;
 
+  SongModel get currentSong => _currentSong;
+
   bool get playing =>
       state is AudioStreamState ? (state as AudioStreamState).playing : false;
 
@@ -54,6 +56,7 @@ class AudioBloc extends Bloc<AudioEvent, AudioState> {
   Stream<AudioState> mapEventToState(AudioEvent event) async* {
     if (event is AudioSelectEvent) {
       _currentSong = event.song;
+      yield* _play(AudioPlayEvent());
     } else {
       if (event is AudioPlayEvent) yield* _play(event);
       if (event is AudioPauseEvent) yield* _pause(event);

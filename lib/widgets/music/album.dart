@@ -1,7 +1,8 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:challenge/models/album.dart';
 import 'package:challenge/resources/constraints.dart';
 import 'package:challenge/resources/palette.dart';
+import 'package:challenge/widgets/common/image.dart';
+import 'package:challenge/widgets/common/spacer.dart';
 import 'package:flutter/material.dart';
 import 'package:challenge/resources/extensions.dart';
 
@@ -21,23 +22,12 @@ class AlbumWidget extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CachedNetworkImage(
+            RoundedImageWidget(
               imageUrl: album.coverUrl,
-              imageBuilder: (context, provider) => Container(
-                height: _imageSize,
-                width: _imageSize,
-                decoration: BoxDecoration(
-                  border: Border.all(),
-                  borderRadius:
-                      BorderRadius.circular(Constraints.borderRadiusNormal),
-                  image: DecorationImage(
-                    image: provider,
-                    fit: BoxFit.contain,
-                  ),
-                ),
-              ),
+              size: _imageSize,
+              borderRadius: Constraints.borderRadiusNormal,
             ),
-            const SizedBox(width: Constraints.spacerLarge),
+            SpacerWidget.large,
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -45,7 +35,7 @@ class AlbumWidget extends StatelessWidget {
                   album.name,
                   style: context.textTheme.subtitle1,
                 ),
-                const SizedBox(height: Constraints.spacerSmall),
+                SpacerWidget.small,
                 Text(
                   album.year,
                   style: context.textTheme.subtitle2,

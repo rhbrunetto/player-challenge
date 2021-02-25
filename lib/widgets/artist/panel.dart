@@ -2,6 +2,7 @@ import 'package:challenge/models/artist.dart';
 import 'package:challenge/resources/constraints.dart';
 import 'package:challenge/resources/palette.dart';
 import 'package:challenge/widgets/artist/section.dart';
+import 'package:challenge/widgets/common/spacer.dart';
 import 'package:challenge/widgets/music/album.dart';
 import 'package:challenge/widgets/music/song.dart';
 import 'package:flutter/material.dart';
@@ -71,12 +72,12 @@ class ArtistPanelWidget extends StatelessWidget {
         child: Column(
           children: [
             _header,
-            const SizedBox(height: Constraints.spacerLarge),
+            SpacerWidget.large,
             Expanded(
               child: ListView(
                 children: [
                   _populars,
-                  const SizedBox(height: Constraints.spacerLarge),
+                  SpacerWidget.large,
                   _albums,
                 ],
               ),
@@ -102,7 +103,7 @@ class _TitledInfo extends StatelessWidget {
             title,
             style: context.textTheme.bodyText1,
           ),
-          const SizedBox(height: Constraints.spacerNormal),
+          SpacerWidget.normal,
           Text(
             subtitle,
             style: context.textTheme.headline3,

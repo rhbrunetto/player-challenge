@@ -2,7 +2,9 @@ import 'package:challenge/blocs/artist.dart';
 import 'package:challenge/blocs/audio.dart';
 import 'package:challenge/resources/constraints.dart';
 import 'package:challenge/resources/palette.dart';
+import 'package:challenge/screens/artist/artist.dart';
 import 'package:challenge/screens/artist/list.dart';
+import 'package:challenge/screens/artist/player.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -77,7 +79,8 @@ class _MyAppState extends State<MyApp> {
             child: child,
           );
         },
-        home: ArtistListScreen(),
+        // home: ArtistListScreen(),
+        home: PlayerScreen(),
       ),
     );
   }

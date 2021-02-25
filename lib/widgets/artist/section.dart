@@ -1,4 +1,4 @@
-import 'package:challenge/resources/constraints.dart';
+import 'package:challenge/widgets/common/spacer.dart';
 import 'package:flutter/material.dart';
 import 'package:challenge/resources/extensions.dart';
 
@@ -16,7 +16,7 @@ class ArtistSectionWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(title, style: context.textTheme.headline4),
-          const SizedBox(height: Constraints.spacerNormal),
+          SpacerWidget.normal,
           content,
         ],
       );
