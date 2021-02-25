@@ -47,7 +47,7 @@ class AlbumWidget extends StatelessWidget {
                 ),
                 const SizedBox(height: Constraints.spacerSmall),
                 Text(
-                  album.year ?? '2019',
+                  album.year,
                   style: context.textTheme.subtitle2,
                 ),
               ],

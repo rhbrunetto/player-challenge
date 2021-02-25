@@ -35,6 +35,24 @@ class ArtistScreen extends StatelessWidget {
                   _iconSize / 2.0,
               child: PlayButton(size: _iconSize),
             ),
+            Positioned(
+              left: Constraints.paddingNormal,
+              top: (context.absoluteHeight * (1 - _panelHeightFactor)) -
+                  3 * Constraints.paddingLarge,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Artist'.toUpperCase(),
+                    style: context.textTheme.headline2,
+                  ),
+                  Text(
+                    artist.name,
+                    style: context.textTheme.headline1,
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       );

@@ -41,11 +41,21 @@ class _MyAppState extends State<MyApp> {
               fontSize: Constraints.fontSizeSmall,
             ),
             headline1: const TextStyle(
+              color: Palette.black,
+              fontSize: Constraints.fontSizeHuge,
+              fontWeight: FontWeight.bold,
+            ),
+            headline2: const TextStyle(
+              color: Palette.black,
+              fontSize: Constraints.fontSizeSmall,
+              fontWeight: FontWeight.w400,
+            ),
+            headline3: const TextStyle(
               color: Palette.darkGrey,
               fontSize: Constraints.fontSizeExtraLarge,
               fontWeight: FontWeight.bold,
             ),
-            headline2: const TextStyle(
+            headline4: const TextStyle(
               color: Palette.grey,
               fontSize: Constraints.fontSizeExtraLarge,
               fontWeight: FontWeight.bold,

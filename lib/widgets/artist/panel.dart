@@ -71,7 +71,7 @@ class ArtistPanelWidget extends StatelessWidget {
         child: Column(
           children: [
             _header,
-                  const SizedBox(height: Constraints.spacerLarge),
+            const SizedBox(height: Constraints.spacerLarge),
             Expanded(
               child: ListView(
                 children: [
@@ -105,7 +105,7 @@ class _TitledInfo extends StatelessWidget {
           const SizedBox(height: Constraints.spacerNormal),
           Text(
             subtitle,
-            style: context.textTheme.headline1,
+            style: context.textTheme.headline3,
           ),
         ],
       );

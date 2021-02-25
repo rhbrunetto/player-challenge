@@ -20,6 +20,7 @@ class Constraints {
   static const double fontSizeNormal = 16.0;
   static const double fontSizeLarge = 18.0;
   static const double fontSizeExtraLarge = 20.0;
+  static const double fontSizeHuge = 40.0;
 
   // SIZED BOX
   static const double spacerExtraSmall = 2.0;

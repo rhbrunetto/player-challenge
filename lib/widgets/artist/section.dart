@@ -15,7 +15,7 @@ class ArtistSectionWidget extends StatelessWidget {
   Widget build(BuildContext context) => Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(title, style: context.textTheme.headline2),
+          Text(title, style: context.textTheme.headline4),
           const SizedBox(height: Constraints.spacerNormal),
           content,
         ],
