@@ -1,0 +1,43 @@
+{
+    "artists": [
+        {
+            "name": "Rhye",
+            "songsCount": 1234,
+            "followers": "60M",
+            "following": 1234,
+            "coverUrl": "https://media.pitchfork.com/photos/5a5e535373f0ef18803bdd02/1:1/w_600/Blood.jpg",
+            "populars": [
+                {
+                    "name": "Summer Days",
+                    "coverUrl": "https://img.discogs.com/rflH7bx4iiYz40H5m5OurlgwakA=/fit-in/600x592/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11511441-1517653897-9390.jpeg.jpg"
+                },
+                {
+                    "name": "Song For You",
+                    "coverUrl": "https://images.genius.com/4ba939cd450d693a5f4c2d686dbe248d.1000x1000x1.png"
+                },
+                {
+                    "name": "Last Dance",
+                    "coverUrl": "https://images.genius.com/2d3fe87fcf846cb9053e28e64d6edfef.319x319x1.jpg"
+                }
+            ],
+            "albums": [
+                {
+                    "name": "Spirit Remixed",
+                    "year": "2019",
+                    "coverUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Rhye_-_Spirit.png/220px-Rhye_-_Spirit.png"
+                },
+                {
+                    "name": "Woman",
+                    "year": "2019",
+                    "coverUrl": "https://images.genius.com/2d3fe87fcf846cb9053e28e64d6edfef.319x319x1.jpg"
+                },
+                {
+                    "name": "Home",
+                    "year": "2019",
+                    "coverUrl": "https://media.pitchfork.com/photos/5f9873c9eb2deab0b3f62e8f/1:1/w_600/Rhye-Home.jpg"
+                }
+
+            ]
+        }
+    ]
+}
