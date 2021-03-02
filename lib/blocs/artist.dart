@@ -1,3 +1,6 @@
+// Didn't break up into small pieces because it's a very simple BLoC
+// But for consistency, it's a good pratice
+
 import 'package:bloc/bloc.dart';
 import 'package:challenge/models/artist.dart';
 import 'package:challenge/repositories/artist.dart';

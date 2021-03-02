@@ -1,4 +1,4 @@
-import 'package:challenge/blocs/audio.dart';
+import 'package:challenge/blocs/audio/audio.dart';
 import 'package:challenge/resources/palette.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -27,9 +27,9 @@ class _PlayButtonState extends State<PlayButton> {
   Widget build(BuildContext context) => BlocBuilder(
         cubit: bloc,
         builder: (context, state) => InkWell(
-          onTap: () => bloc.add(
-            bloc.playing ? AudioPauseEvent() : AudioPlayEvent(),
-          ),
+          onTap: () {
+            bloc.add(AudioPlayOrPauseEvent());
+          },
           child: Container(
             width: widget.size,
             height: widget.size,
@@ -38,7 +38,7 @@ class _PlayButtonState extends State<PlayButton> {
               color: Palette.yellow,
             ),
             child: Icon(
-              bloc.playing ? Icons.pause : Icons.play_arrow,
+              bloc.isPlaying ? Icons.pause : Icons.play_arrow,
               size: widget.size * 0.75,
               color: Colors.black,
             ),

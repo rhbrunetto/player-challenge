@@ -1,5 +1,5 @@
 import 'package:challenge/blocs/artist.dart';
-import 'package:challenge/blocs/audio.dart';
+import 'package:challenge/blocs/audio/audio.dart';
 import 'package:challenge/resources/constraints.dart';
 import 'package:challenge/resources/palette.dart';
 import 'package:challenge/screens/artist/artist.dart';
@@ -23,6 +23,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom]);
+    Bloc.observer = SimpleBlocDelegate();
   }
 
   @override
@@ -33,7 +34,7 @@ class _MyAppState extends State<MyApp> {
         BlocProvider(create: (context) => AudioBloc()),
       ],
       child: MaterialApp(
-        title: 'CookieJar MediaPlayer!',
+        title: 'Challenge MediaPlayer!',
         theme: ThemeData(
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -79,8 +80,8 @@ class _MyAppState extends State<MyApp> {
             child: child,
           );
         },
-        // home: ArtistListScreen(),
-        home: PlayerScreen(),
+        home: ArtistListScreen(),
+        // home: PlayerScreen(),
       ),
     );
   }
@@ -95,4 +96,13 @@ class _ScrollBehavior extends ScrollBehavior {
     AxisDirection axisDirection,
   ) =>
       child;
+}
+
+// BlocObserver, for debug purpose
+class SimpleBlocDelegate extends BlocObserver {
+  @override
+  void onTransition(Bloc bloc, Transition transition) {
+    super.onTransition(bloc, transition);
+    debugPrint(transition.toString());
+  }
 }

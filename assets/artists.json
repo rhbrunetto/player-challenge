@@ -10,17 +10,20 @@
                 {
                     "name": "Summer Days",
                     "artistName": "Rhye",
-                    "coverUrl": "https://img.discogs.com/rflH7bx4iiYz40H5m5OurlgwakA=/fit-in/600x592/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11511441-1517653897-9390.jpeg.jpg"
+                    "coverUrl": "https://img.discogs.com/rflH7bx4iiYz40H5m5OurlgwakA=/fit-in/600x592/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11511441-1517653897-9390.jpeg.jpg",
+                    "fileUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
                 },
                 {
                     "name": "Song For You",
                     "artistName": "Rhye",
-                    "coverUrl": "https://images.genius.com/4ba939cd450d693a5f4c2d686dbe248d.1000x1000x1.png"
+                    "coverUrl": "https://images.genius.com/4ba939cd450d693a5f4c2d686dbe248d.1000x1000x1.png",
+                    "fileUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
                 },
                 {
                     "name": "Last Dance",
                     "artistName": "Rhye",
-                    "coverUrl": "https://images.genius.com/2d3fe87fcf846cb9053e28e64d6edfef.319x319x1.jpg"
+                    "coverUrl": "https://images.genius.com/2d3fe87fcf846cb9053e28e64d6edfef.319x319x1.jpg",
+                    "fileUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
                 }
             ],
             "albums": [

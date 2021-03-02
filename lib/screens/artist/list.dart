@@ -23,7 +23,7 @@ class _ArtistListScreenState extends State<ArtistListScreen> {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
-          title: Text('CookieJar Challenge'),
+          title: Text('Challenge Challenge'),
         ),
         body: BlocBuilder(
           cubit: artistBloc,

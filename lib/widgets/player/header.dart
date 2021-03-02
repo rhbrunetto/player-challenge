@@ -1,4 +1,4 @@
-import 'package:challenge/blocs/audio.dart';
+import 'package:challenge/blocs/audio/audio.dart';
 import 'package:challenge/models/song.dart';
 import 'package:challenge/resources/constraints.dart';
 import 'package:challenge/resources/extensions.dart';
@@ -21,16 +21,18 @@ class _PlayerHeaderWidgetState extends State<PlayerHeaderWidget> {
   void initState() {
     super.initState();
     favorite = false;
-    bloc = BlocProvider.of<AudioBloc>(context)
-      ..add(
-        AudioSelectEvent(
-          song: SongModel(
-            name: 'Last Dance',
-            coverUrl:
-                'https://cdns-images.dzcdn.net/images/cover/c57291ee9dd69ed117d0420bc053727a/350x350.jpg',
-          ),
-        ),
-      );
+    bloc = BlocProvider.of<AudioBloc>(context);
+    // ..add(
+    //   AudioSelectEvent(
+    //     song: SongModel(
+    //         name: 'Last Dance',
+    //         coverUrl:
+    //             'https://cdns-images.dzcdn.net/images/cover/c57291ee9dd69ed117d0420bc053727a/350x350.jpg',
+    //         artistName: 'Rhye',
+    //         fileUrl:
+    //             'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3'),
+    //   ),
+    // );
   }
 
   // Yeah, a little tricky... But it's just a workaround
@@ -77,7 +79,7 @@ class _PlayerHeaderWidgetState extends State<PlayerHeaderWidget> {
                 _title,
                 SpacerWidget.extraSmall,
                 Text(
-                  song.artistName ?? 'Rhye',
+                  song.artistName,
                   style: context.textTheme.bodyText1,
                 )
               ],
